@@ -18,6 +18,6 @@ services:
                     shell: sh
                     run: npm run build
     webapi:
-    project: packages/webapi
-    host: appservice
-    language: js
+        project: packages/webapi
+        host: appservice
+        language: js
