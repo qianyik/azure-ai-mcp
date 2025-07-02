@@ -202,9 +202,12 @@ PublishScripts/
 *.snupkg
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
+**/[Pp]ackages/*/package.lock.json
 !**/[Pp]ackages/*/package.json
 # except build/, which is used as an MSBuild target.
 !**/[Pp]ackages/build/
+packages/webapi/node_modules/
+!**/[Pp]ackages/webapi/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/[Pp]ackages/repositories.config
 # NuGet v3's project.json files produces more ignorable files
@@ -405,3 +408,6 @@ FodyWeavers.xsd
 # Environment variables
 .env
 .azure
+
+# AI agent confi
+my-agent.agent.yaml
